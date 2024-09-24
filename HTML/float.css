@@ -1,0 +1,29 @@
+.container {
+    border: solid 1px black;
+
+}
+
+.container > div {
+    height: 50px;
+    width: 200px;
+
+}
+
+.first {
+    float: left;
+    border: solid 3px red;
+    
+}
+
+.second {
+    float: right;
+    border: solid 3px blue;
+    
+}
+
+.third {
+    float: left;
+    border: solid 3px pink;
+    
+}
+

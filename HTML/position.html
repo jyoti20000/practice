@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position property</title>
+    <style>
+        /* div {
+            border:solid 2px red;
+            height: 200px;
+
+        } */
+        /* p {
+            border:solid 2px black;
+        } */
+        .abc{
+            position: relative;
+            top: -10px;
+            left: -5px;
+        
+        }
+        .abc1{
+            position: fixed;
+            bottom: 50px;
+            left: 200px;
+            z-index: 2;
+            background-color: aqua;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>This is the heading...</h1>
+        <p>This paragraph has not been moved...</p>
+        <p class="abc">This paragraph has been moved from its original position...</p>
+        <p class="abc1">This paragraph has not been moved...</p>
+    </div>
+</body>
+</html>

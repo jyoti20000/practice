@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox-self-align-items</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .box {
+            border: dotted 2px rgb(96, 139, 168);
+            width: 500px;
+            display: flex;
+            flex-direction: row;
+            /* flex-wrap: wrap; */
+            flex-flow: row nowrap;
+            
+        }
+        .box > div {
+            border: solid 2px rgb(96, 139, 168);
+            border-radius: 5px;
+            
+        }
+        .one {
+            flex-basis: 100px;  
+            flex-shrink: 1;
+            flex-grow: 0;
+            /* flex: 0(flex-grow) 0(flex-shrink) 200px(flex-basis)  */
+           align-self: center;
+        }
+        .two {
+            flex: 0 1 100px;
+            align-self: flex-end;
+            
+        }
+        .three {
+            flex: 0 1 100px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="one">One</div>
+        <div class="two">Two</div>
+        <div class="three">Three
+            <br>has
+            <br>extra
+            <br>text
+        </div>
+    </div>
+    
+</body>
+</html>
